@@ -3,7 +3,7 @@
 Code files explanation
 
 ---python files---  
-Clip evaluation (MS COCO 2014 karpathy) all epochs.py: evaluates trained models for every epoch on the karpathy MS COCO test set for text&image recall@1,5,10  
+`Clip evaluation (MS COCO 2014 karpathy) all epochs.py`: evaluates trained models for every epoch on the karpathy MS COCO test set for text&image recall@1,5,10  
 Clip evaluation (flickr30k 2014 karpathy) all epochs.py: same but for flickr30k  
 fine-tuning CLIP.py: loads in the flickr30k training set and fine-tunes CLIP on it using the CLIP loss  
 image caption generator.py: generates captions for images in the flickr30k dataset and saves the generated captions as json files  
