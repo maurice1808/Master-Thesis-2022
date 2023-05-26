@@ -22,21 +22,21 @@ Code files explanation
 model type 2, MLP + MLM with clip frozen:<br />
 MLM+MLP.py ‘clip model’ ‘batch_size’ ‘dataset’ ‘smalltest’<br />
 MLM+MLP.py = file name<br />
-‘clip model’ = 32base for the small clip model, 14large for large model, 14large336 for largest model
-‘batch_size’ = batch size used in training loop
-‘dataset’ = dataset used to train and test on, flickr30k for flickr dataset, mscoco for MS COCO 2014 dataset
-‘smalltest’ = False by default, set to True to cut down the training and test sets to very small number of samples to do a test run
+‘clip model’ = 32base for the small clip model, 14large for large model, 14large336 for largest model<br />
+‘batch_size’ = batch size used in training loop<br />
+‘dataset’ = dataset used to train and test on, flickr30k for flickr dataset, mscoco for MS COCO 2014 dataset<br />
+‘smalltest’ = False by default, set to True to cut down the training and test sets to very small number of samples to do a test run<br />
 
-Example command line: 
-python MLP+MLM.py 32base 64 flickr30k True
+Example command line: <br />
+python MLP+MLM.py 32base 64 flickr30k True<br />
 
-model type 3, MLP + MLM with clip unfrozen:
-MLP+MLM+CLIP.py is the exact same, example command line:
-python MLP+MLM+CLIP.py 32base 64 flickr30k True
+model type 3, MLP + MLM with clip unfrozen:<br />
+MLP+MLM+CLIP.py is the exact same, example command line:<br />
+python MLP+MLM+CLIP.py 32base 64 flickr30k True<br />
 
-model type 4, optimize a text encoder given an already trained image encoder:
-textencoder.py has 1 small difference, at the end of the line you have to type the filename of the image encoder that you want to use. For example:
-python textencoder.py 32base 64 flickr30k True image_encoder.pt
+model type 4, optimize a text encoder given an already trained image encoder:<br />
+textencoder.py has 1 small difference, at the end of the line you have to type the filename of the image encoder that you want to use. For example:<br />
+python textencoder.py 32base 64 flickr30k True image_encoder.pt<br />
 
-if you don’t want to use a small test, put:
-python textencoder.py 32base 64 flickr30k False image_encoder.pt
+if you don’t want to use a small test, put:<br />
+python textencoder.py 32base 64 flickr30k False image_encoder.pt<br />
