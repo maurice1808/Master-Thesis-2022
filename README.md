@@ -19,10 +19,9 @@ Code files explanation
 
 ---instructions---
 
-model type 2, MLP + MLM with clip frozen:
-MLM+MLP.py ‘clip model’ ‘batch_size’ ‘dataset’ ‘smalltest’
-
-MLM+MLP.py = file name
+model type 2, MLP + MLM with clip frozen:<br />
+MLM+MLP.py ‘clip model’ ‘batch_size’ ‘dataset’ ‘smalltest’<br />
+MLM+MLP.py = file name<br />
 ‘clip model’ = 32base for the small clip model, 14large for large model, 14large336 for largest model
 ‘batch_size’ = batch size used in training loop
 ‘dataset’ = dataset used to train and test on, flickr30k for flickr dataset, mscoco for MS COCO 2014 dataset
