@@ -18,6 +18,7 @@ Code files explanation
 `sparse CLIP.ipynb`: original implementation that only has the MLM overhead  
 
 ---instructions---
+
 model type 2, MLP + MLM with clip frozen:
 MLM+MLP.py ‘clip model’ ‘batch_size’ ‘dataset’ ‘smalltest’
 
