@@ -152,10 +152,10 @@ test_caps = [x['sentences'] for x in data['images'] if x.get('split') == 'test' 
 files = []
 test_files = []
 for x in data['images']:
-    if x.get('split') == 'train':
+    if (x.get('split') == 'train' and len(x.get('sentids')) == 5):
         files.append(train_folder + x['filename'])
     
-    elif x.get('split') == 'test':
+    elif (x.get('split') == 'test' and len(x.get('sentids')) == 5):
         test_files.append(test_folder + x['filename'])
 
 # every image has 5-6 captions
